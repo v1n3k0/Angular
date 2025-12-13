@@ -9,7 +9,7 @@ export class CardComponent {
  plano = {
   infos:{
     tipo: 'Simples',
-    preco: 'R$ 100,00/Mês'
+    preco: 100
   }
  }
 }
