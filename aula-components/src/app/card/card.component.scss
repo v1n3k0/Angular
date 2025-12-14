@@ -20,3 +20,8 @@
         font-size: 40px;
     }
 }
+
+// mat-slider overrides do angular material component
+:host ::ng-deep mat-slider .mdc-slider__track--active_fill{
+    border-color: yellowgreen !important;
+}

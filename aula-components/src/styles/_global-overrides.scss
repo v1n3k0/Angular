@@ -1,3 +1,8 @@
 app-card-button-cancel .card-cancel-button {
     background-color: yellow !important;
 } 
+
+// mat-slider overrides do angular material component
+// .mdc-slider__track--active_fill{
+//     border-color: yellowgreen !important;
+// }
