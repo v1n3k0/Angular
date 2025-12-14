@@ -21,7 +21,11 @@
     }
 }
 
-// mat-slider overrides do angular material component
-:host ::ng-deep mat-slider .mdc-slider__track--active_fill{
-    border-color: yellowgreen !important;
+.card-cancel-button {
+    background-color: greenyellow !important;
 }
+
+// mat-slider overrides do angular material component
+// :host ::ng-deep mat-slider .mdc-slider__track--active_fill{
+//     border-color: yellowgreen !important;
+// }
