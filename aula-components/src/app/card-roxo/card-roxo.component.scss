@@ -30,3 +30,7 @@
         font-weight: bold;
     }
 }
+
+:host ::ng-deep .card-roxo-button{
+    background-color: darkmagenta !important;
+}
