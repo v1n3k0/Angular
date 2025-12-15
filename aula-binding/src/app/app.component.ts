@@ -6,11 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  buttonTitle = 'Clique aqui';
-  buttonDisabled = true;
+  widthButton1 = '110px';
+  widthButton2 = 130;
+  stylesObj = { width: '160px', backgroundColor: 'grey' };
 
-  OnButtonClick() {
-    this.buttonTitle = 'Obrigado por clicar';
-    this.buttonDisabled = !this.buttonDisabled;
+  updateStyleObj() {
+    console.log('updateStyleObj');
+
+    this.stylesObj.width = '170px';
+    this.stylesObj.backgroundColor = 'lightblue';
+  }
+
+  updateStyleObjCorrect() {
+    console.log('updateStyleObjCorrect');
+
+    this.stylesObj = { width: '170px', backgroundColor: 'lightblue' };
+  }
+
+  updateWidth() {
+    this.widthButton2 = 200;
   }
 }
