@@ -12,16 +12,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'style-binding'`, () => {
+  it(`should have as title 'class-binding'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('style-binding');
+    expect(app.title).toEqual('class-binding');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('style-binding app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('class-binding app is running!');
   });
 });
