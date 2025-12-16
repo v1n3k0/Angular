@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   cardPlanType = 'Simples';
-  cardPlanValue = 100;
+  cardPlanPrice = 100;
 }
