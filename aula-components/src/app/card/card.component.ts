@@ -1,16 +1,11 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
- plano = {
-  infos:{
-    tipo: 'Simples',
-    preco: 100
-  }
- }
+ @Input() planType: string = '';
+ @Input({ required: true, alias: 'planValue' }) planValue: number = 0;
 }
