@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PersonComponent } from './person/person.component';
+import { StatusClassPipe } from './pipes/status-class.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonComponent
+    PersonComponent,
+    StatusClassPipe
   ],
   imports: [
     BrowserModule

@@ -22,4 +22,16 @@
         background-color: rgb(06, 229, 54);
         border: 3px solid rgb(168, 249, 131);
     }
+    
+    .active {
+        color: white;
+    }
+
+    .partial{
+        color: orange;
+    }
+
+    .blocked{
+        color: red;
+    }
 }

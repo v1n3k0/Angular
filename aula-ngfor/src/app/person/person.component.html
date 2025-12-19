@@ -4,7 +4,7 @@
     [class.item--highlighted]="isSelected"
     (click)="selectPerson()"
   >
-    <p class="item__name">{{ personIndex }} - {{ personName }}</p>
+    <p class="item__name" [class]="personAge | statusClass">{{ personIndex }} - {{ personName }}</p>
     <p class="item__age">{{ personAge }} anos</p>
 
     <p *ngIf="isFirst">É o primeiro</p>

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   personSelectedIndex: number | undefined;
   listPeople = [
-    { name: 'Felipe Freitas', age: 26 },
+    { name: 'Felipe Freitas', age: 6 },
     { name: 'Fulano da Silva', age: 34 },
     { name: 'Jorginho Carvalho', age: 55 },
     { name: 'Joãozinho da Silva', age: 18 }
