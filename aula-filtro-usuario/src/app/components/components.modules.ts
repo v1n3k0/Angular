@@ -3,13 +3,15 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from "@angular/common";
 import { AngularMaterialModules } from "../angular-material/angular-material.modules";
 
-import { UserDetailsComponent } from "./user-details/user-details.component";
 import { FilterComponent } from "./filter/filter.component";
+import { UserListComponent } from "./user-list/user-list.component";
+import { UserDetailsComponent } from "./user-details/user-details.component";
 
 @NgModule({
   declarations: [
-    UserDetailsComponent,
     FilterComponent,
+    UserListComponent,
+    UserDetailsComponent,
   ],
   imports: [
     AngularMaterialModules,
@@ -17,8 +19,9 @@ import { FilterComponent } from "./filter/filter.component";
     CommonModule
   ],
   exports: [
+    FilterComponent,
+    UserListComponent,
     UserDetailsComponent,
-    FilterComponent
   ]
 })
 export class ComponentsModules { }
