@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IUser } from './interfaces/user/user.interface';
-import { UsersList } from './data/users-list';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +8,11 @@ import { UsersList } from './data/users-list';
 })
 export class AppComponent {
   title = 'aula-filtro-usuario';
-  userSelected: IUser = UsersList[0]; 
+  userSelected: IUser = {} as IUser;
+  showUserDetails: boolean = false;
+
+  onUserSelected(user: IUser): void {
+    this.userSelected = user;
+    this.showUserDetails = true;
+  }
 }
