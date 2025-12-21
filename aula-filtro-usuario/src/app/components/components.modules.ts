@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from "@angular/common";
+import { PipesModule } from "../pipes/pipes.modules";
 import { AngularMaterialModules } from "../angular-material/angular-material.modules";
 
 import { FilterComponent } from "./filter/filter.component";
@@ -14,11 +15,13 @@ import { UserDetailsComponent } from "./user-details/user-details.component";
     UserDetailsComponent,
   ],
   imports: [
-    AngularMaterialModules,
+    PipesModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    AngularMaterialModules,
   ],
   exports: [
+    PipesModule,
     FilterComponent,
     UserListComponent,
     UserDetailsComponent,
