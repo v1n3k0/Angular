@@ -4,7 +4,7 @@
             <app-filter (onFilter)="onFilter($event)" />
         </div>
         <div class="main-left-div">
-            <app-user-list [userList]="userList" (userSelected)="onUserSelected($event)" />
+            <app-user-list [userList]="userListFiltered" (userSelected)="onUserSelected($event)" />
         </div>
     </div>
     <div class="right-dev">
