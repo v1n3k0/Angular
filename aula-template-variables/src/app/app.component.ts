@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, input } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,13 @@ import { ChangeDetectorRef, Component, input } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  inputValue: string = 'Teste';
+  @ViewChild('meuInput') meuInput!: ElementRef<HTMLInputElement>;
+
+  atualizar() {
+    this.meuInput.nativeElement.value = 'Valor atualizado!';
+  }
+
+  focus() {
+    this.meuInput.nativeElement.focus();
+  }
 }
