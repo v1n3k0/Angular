@@ -1,4 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { FilhoComponent } from './filho/filho.component';
 
 @Component({
   selector: 'app-root',
@@ -6,13 +7,10 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  @ViewChild('meuInput') meuInput!: ElementRef<HTMLInputElement>;
+  @ViewChild(FilhoComponent) filhoCompRef!: FilhoComponent;
 
-  atualizar() {
-    this.meuInput.nativeElement.value = 'Valor atualizado!';
-  }
-
-  focus() {
-    this.meuInput.nativeElement.focus();
+  hello() {
+    this.filhoCompRef.dizerOi();
+    this.filhoCompRef.message = 'Mensagem alterada pelo Pai!';
   }
 }
