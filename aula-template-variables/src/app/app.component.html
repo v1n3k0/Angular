@@ -2,10 +2,23 @@
 
 <app-com-diretiva/> -->
 
-<button disabled>Meu botão</button>
+<!-- <button disabled>Meu botão</button>
 
 <button [attr.disabled]="true">Meu botão attr</button>
 
 <button [disabled]="true">Meu botão prop</button>
 
-<button appDisable>Meu botão attr diretiva</button>
+<button appDisable>Meu botão attr diretiva</button> -->
+
+<p style="background-color: orange; color: white;">Paragrafo normal</p>
+
+<p [attr.style]="'background-color: blue; color: white;'">Attr</p>
+
+<p [style]="'background-color: blue; color: white;'">style prop obj</p>
+
+<p [style]="{
+'background-color': 'blue',
+'color': 'white'
+}">style prop</p>
+
+<p appStyle>Diretiva</p>
