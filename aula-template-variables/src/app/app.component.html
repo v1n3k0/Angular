@@ -10,7 +10,7 @@
 
 <button appDisable>Meu botão attr diretiva</button> -->
 
-<p style="background-color: orange; color: white;">Paragrafo normal</p>
+<!-- <p style="background-color: orange; color: white;">Paragrafo normal</p>
 
 <p [attr.style]="'background-color: blue; color: white;'">Attr</p>
 
@@ -21,4 +21,17 @@
 'color': 'white'
 }">style prop</p>
 
-<p appStyle>Diretiva</p>
+<p appStyle>Diretiva</p> -->
+
+<p class="meu-texto"> class normal </p>
+
+<p [attr.class]="'meu-texto'">class attr</p>
+
+<p [className]="'meu-texto meu-size'">class prop</p>
+
+<p [class]="{
+    'meu-texto': true,
+    'meu-size': true
+}">class binding</p>
+
+<p appClass>class diretiva</p>
