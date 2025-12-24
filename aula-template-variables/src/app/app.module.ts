@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { FilhoComponent } from './filho/filho.component';
+import { SemDiretivaComponent } from './sem-diretiva/sem-diretiva.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FilhoComponent
+    FilhoComponent,
+    SemDiretivaComponent
   ],
   imports: [
     BrowserModule,
