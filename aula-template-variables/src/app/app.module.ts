@@ -11,6 +11,7 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { DisableDirective } from './directives/disable.directive';
 import { StyleDirective } from './directives/style.directive';
 import { ClassDirective } from './directives/class.directive';
+import { ListenerDirective } from './directives/listener.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ClassDirective } from './directives/class.directive';
     HighlightDirective,
     DisableDirective,
     StyleDirective,
-    ClassDirective
+    ClassDirective,
+    ListenerDirective
   ],
   imports: [
     BrowserModule,
