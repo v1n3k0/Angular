@@ -30,4 +30,12 @@ export class App implements OnInit, AfterViewInit {
     this.divRef.nativeElement.textContent = 'Conteúdo inserido via ElementRef';
     this.divRef.nativeElement.classList.add('minha-classe');
   }
+
+  createElement(): void {
+    const novoDiv = document.createElement('div');
+    novoDiv.textContent = 'Nova div criada dinamicamente';
+    novoDiv.classList.add('bg-red');
+
+    this._elref.nativeElement.appendChild(novoDiv);
+  }
 }
