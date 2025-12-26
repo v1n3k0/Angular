@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit, signal, ViewChild } from '@angular/core';
+import { TesteService } from './services/teste.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,10 @@ import { AfterViewInit, Component, ElementRef, OnInit, signal, ViewChild } from 
 export class App implements OnInit, AfterViewInit {
   @ViewChild('minhaDiv') divRef!: ElementRef<HTMLDivElement>;
 
-  constructor(private readonly _elref: ElementRef) { }
+  constructor(
+    private readonly _elref: ElementRef,
+    private readonly _testeService: TesteService
+  ) { }
 
   ngOnInit(): void {
     // console.log(this._elref);
@@ -37,5 +41,7 @@ export class App implements OnInit, AfterViewInit {
     // novoDiv.classList.add('bg-red');
 
     // this._elref.nativeElement.appendChild(novoDiv);
+
+    this._testeService.create(this._elref)
   }
 }
