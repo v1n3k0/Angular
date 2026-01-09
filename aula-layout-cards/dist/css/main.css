@@ -121,3 +121,40 @@ body {
     padding: 20px; }
     .debit-card__content-item p:nth-of-type(1) {
       margin-right: auto; }
+
+.client-infos-card {
+  border: none;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: white; }
+  .client-infos-card__header {
+    padding: 15px;
+    background-color: #32e9da; }
+  .client-infos-card__header-title {
+    display: flex;
+    align-items: center;
+    margin-right: auto; }
+    .client-infos-card__header-title h1 {
+      font-size: 20px; }
+  .client-infos-card__header-icon {
+    width: 40px;
+    margin-right: 10px; }
+  .client-infos-card__content {
+    padding: 15px;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white; }
+  .client-infos-card__content-item {
+    display: flex;
+    align-items: center;
+    padding: 20px; }
+    .client-infos-card__content-item p:nth-of-type(1) {
+      margin-right: auto; }
+  .client-infos-card__content-line {
+    border: 0.5px solid #9e9e9e; }
+  .client-infos-card__content-summary {
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0px 12px; }
