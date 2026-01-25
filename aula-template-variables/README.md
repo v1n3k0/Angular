@@ -1,10 +1,22 @@
 # AulaTemplateVariables
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+Projeto gerado com Angular CLI (versão 17.0.0).
+
+## Versões recomendadas
+
+- **Angular:** 17.0.0 (conforme package.json)
+- **Node (recomendado):** 20.20.0 (ou Node LTS 18, >=18.13.0)
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Instruções rápidas para rodar localmente:
+
+1. Se usar `nvm`: `nvm use 20.20.0`
+2. Instale dependências: `npm install`
+3. Inicie o servidor de desenvolvimento: `npm start`  (equivalente a `ng serve`)
+4. Abra `http://localhost:4200/` no navegador.
+
+O aplicativo recarrega automaticamente ao alterar arquivos fonte.
 
 ## Code scaffolding
 
