@@ -17,9 +17,6 @@
             background-color: #a00909;
         }
         
-        // &--bg-blue{
-        //     background-color: #32e9da;
-        // }
     }
 
     &__content {
@@ -29,5 +26,10 @@
         border-bottom-right-radius: 5px;
         background-color: white;
         display: block;
+    }
+
+    &__title-text{
+        font-size: 20px;
+        font-weight: 800;
     }
 }
