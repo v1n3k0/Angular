@@ -5,6 +5,5 @@ import { Directive, HostBinding, Input } from '@angular/core';
   host: { 'class': 'ca-c-card__header' }
 })
 export class CardHeaderDirective {
-  @Input()
-  @HostBinding('class') color: string = '';
+
 }
