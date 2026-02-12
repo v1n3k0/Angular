@@ -1,4 +1,6 @@
 <div class="card-title">
-    <img appCardMediumIcon class="card-title__icon" [src]="'assets/icons/' + icon" />
+    <!-- <img appCardMediumIcon class="card-title__icon" [src]="'assets/icons/' + icon" /> -->
+    <img *ngIf="iconSize === 'medium'" appCardMediumIcon class="card-title__icon" [src]="'assets/icons/' + icon" />
+    <img *ngIf="iconSize === 'large'" appCardLargeIcon  class="card-title__icon" [src]="'assets/icons/' + icon" />
     <h1 appCardTitleText>{{ title }}</h1>
 </div>
