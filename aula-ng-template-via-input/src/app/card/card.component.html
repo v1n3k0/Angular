@@ -1,1 +1,12 @@
-<p>card works!</p>
+<ng-container *ngTemplateOutlet="header">
+</ng-container>
+
+<ng-container *ngTemplateOutlet="body">
+</ng-container>
+
+<ng-container *ngTemplateOutlet="footer ? footer : defaultFooter">
+</ng-container>
+
+<ng-template #defaultFooter>
+    Sou Footer default
+</ng-template>
