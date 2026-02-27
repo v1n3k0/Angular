@@ -1,8 +1,3 @@
 <div class="card">
-    <div *ngIf="contidion">
-        <ng-content select="app-meu-comp"></ng-content>
-    </div>
-    <div *ngIf="!contidion">
-        Conteúdo não projetado
-    </div>
+    <ng-content *ngTemplateOutlet="content"></ng-content>
 </div>
