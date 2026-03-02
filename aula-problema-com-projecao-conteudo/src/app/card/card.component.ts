@@ -6,11 +6,14 @@ import { AfterContentInit, Component, ContentChild, OnInit, TemplateRef } from '
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit, AfterContentInit {
+  condition: boolean = true;
+
+  @ContentChild('meuTemplate') content!: TemplateRef<any>;
+
   ngAfterContentInit(): void {
     console.log('AfterContentInit', this.content);
   }
   ngOnInit(): void {
     console.log('OnInit', this.content);
   }
-  @ContentChild('meuTemplate') content!: TemplateRef<any>;
 }
