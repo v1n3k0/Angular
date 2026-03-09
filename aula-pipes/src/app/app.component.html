@@ -1,2 +1,5 @@
-{{ pessoa.nome | uppercase }} tem {{ pessoa.idade }} anos e tem status {{ pessoa.status | userStatus}}.
+Nome do Usuario: <b>{{ pessoa.nome | truncate : 3 | uppercase}}</b>
+<br>
+
+Status: <b>{{ pessoa.status | userStatus}}</b>
 <br>
