@@ -1,3 +1,2 @@
-{{ pessoa.nome | uppercase }} tem {{ pessoa.idade }} anos e nasceu em {{ pessoa.dataNascimento | date:'dd/MM/yyyy' }}.
+{{ pessoa.nome | uppercase }} tem {{ pessoa.idade }} anos e tem status {{ pessoa.status | userStatus}}.
 <br>
-{{ pessoa | json | uppercase}}

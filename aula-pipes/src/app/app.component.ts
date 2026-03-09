@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 
+export enum UserStatusEnum {
+  Ativo = 1,
+  Inativo = 2
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,6 +14,6 @@ export class AppComponent {
   pessoa = {
     nome: 'João',
     idade: 30,
-    dataNascimento: new Date(1994, 5, 15)
+    status: 10
   }
 }
