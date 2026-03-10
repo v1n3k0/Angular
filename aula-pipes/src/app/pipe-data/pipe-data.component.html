@@ -1,0 +1,13 @@
+<h1>Formato ISO8601:</h1>
+<p><b>Data convertida para regiao:</b>{{ minhaData | date: 'full' }}</p>
+<br>
+<p><b>Data UTC-0:</b>{{ minhaData | date: 'full' : '+0000' }}</p>
+<br>
+<h1>Formato TimeStamp</h1>
+<p><b>Timestamp para regiao:</b> {{ 1717243200000 | date: 'full' }}</p>
+
+<p><b>Timestamp UTC-0:</b> {{ 1717243200000 | date: 'full' : '+0000' }}</p>
+
+<h1>Formato Obj</h1>
+<p><b>Objeto Date para regiao:</b> {{ minhaDataObj | date: 'full' }}</p>
+<p><b>Objeto Date UTC-0:</b> {{ minhaDataObj | date: 'full' : '+0000' }}</p>
