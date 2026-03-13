@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './pipe-data.component.scss'
 })
 export class PipeDataComponent implements OnInit {
-  minhaData: string = '2024-06-01T12:00:00Z';
+  minhaData: string = '2024-10-01T12:00:00Z';
   minhaDataObj: Date = new Date(this.minhaData);
 
   ngOnInit(): void {

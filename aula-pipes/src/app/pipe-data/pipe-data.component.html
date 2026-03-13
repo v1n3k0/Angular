@@ -11,3 +11,16 @@
 <h1>Formato Obj</h1>
 <p><b>Objeto Date para regiao:</b> {{ minhaDataObj | date: 'full' }}</p>
 <p><b>Objeto Date UTC-0:</b> {{ minhaDataObj | date: 'full' : '+0000' }}</p>
+<br>
+
+<h1>Formatação Personalizada</h1>
+<p>{{ minhaData | date: "'Hoje é' EEEE 'dia' dd 'de' MMMM 'de' yyyy" }}</p>
+<br>
+<p>{{ minhaData | date: "'Hoje é' EEEE 'dia' dd 'de' MMMM 'de' yyyy 'ás' HH:mm" }}</p>
+<br>
+<p>{{ minhaData | date: "'Hoje é' EEEE 'dia' dd 'de' MMMM 'de' yyyy 'ás' HH:mm zzzz" }}</p>
+<br>
+<p>{{ minhaData | date: "'Hoje é' EEEE 'dia' dd 'de' MMMM 'de' yyyy 'ás' HH:mm zzzz" : '+0000' }}</p>
+<br>
+<p>{{ minhaData | date: "dd/MM/yyyy 'Hora' HH:mm aa" : '+0000' }}</p>
+<br>
