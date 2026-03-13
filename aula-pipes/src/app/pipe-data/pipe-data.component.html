@@ -1,4 +1,4 @@
-<h1>Formato ISO8601:</h1>
+<!-- <h1>Formato ISO8601:</h1>
 <p><b>Data convertida para regiao:</b>{{ minhaData | date: 'full' }}</p>
 <br>
 <p><b>Data UTC-0:</b>{{ minhaData | date: 'full' : '+0000' }}</p>
@@ -23,4 +23,9 @@
 <p>{{ minhaData | date: "'Hoje é' EEEE 'dia' dd 'de' MMMM 'de' yyyy 'ás' HH:mm zzzz" : '+0000' }}</p>
 <br>
 <p>{{ minhaData | date: "dd/MM/yyyy 'Hora' HH:mm aa" : '+0000' }}</p>
-<br>
+<br> -->
+
+<h1>Formatação Padrão</h1>
+<p><b>Data para regiao:</b>{{ minhaData | date }}</p>
+<p><b>Data para regiao:</b>{{ minhaData | date : 'full' : undefined : 'en-US'}}</p>
+<p><b>Data para regiao:</b>{{ minhaData | date : 'full' : undefined : 'pt-BR'}}</p>
