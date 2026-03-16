@@ -11,6 +11,7 @@ import { LOCALE_ID } from '@angular/core';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { PipeDecimalComponent } from './pipe-decimal/pipe-decimal.component';
 
 registerLocaleData(localePt, 'pt-BR');
 
@@ -19,7 +20,8 @@ registerLocaleData(localePt, 'pt-BR');
     AppComponent,
     UserStatusPipe,
     TruncatePipe,
-    PipeDataComponent
+    PipeDataComponent,
+    PipeDecimalComponent
   ],
   imports: [
     BrowserModule
