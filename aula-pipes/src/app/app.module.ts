@@ -7,11 +7,12 @@ import { TruncatePipe } from './pipes/truncate.pipes';
 import { PipeDataComponent } from './pipe-data/pipe-data.component';
 
 import { DATE_PIPE_DEFAULT_OPTIONS } from '@angular/common';
-import { LOCALE_ID } from '@angular/core';
+import { LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { PipeDecimalComponent } from './pipe-decimal/pipe-decimal.component';
+import { PipeCurrencyComponent } from './pipe-currency/pipe-currency.component';
 
 registerLocaleData(localePt, 'pt-BR');
 
@@ -21,7 +22,8 @@ registerLocaleData(localePt, 'pt-BR');
     UserStatusPipe,
     TruncatePipe,
     PipeDataComponent,
-    PipeDecimalComponent
+    PipeDecimalComponent,
+    PipeCurrencyComponent
   ],
   imports: [
     BrowserModule
@@ -38,6 +40,10 @@ registerLocaleData(localePt, 'pt-BR');
     {      
       provide: LOCALE_ID,
       useValue: 'pt-BR' 
+    },
+    {
+      provide: DEFAULT_CURRENCY_CODE,
+      useValue: 'BRL'
     }
   ],
   bootstrap: [AppComponent]
