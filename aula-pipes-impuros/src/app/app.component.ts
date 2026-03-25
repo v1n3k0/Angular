@@ -46,4 +46,15 @@ export class AppComponent {
 
     return status[this.users[userIndex].status];
   }
+
+  getUserStatusImage(userIndex: number): string {
+  const status: { [key:string]: string } = {
+      1: 'assets/icons/active-user-icon.png',
+      2: 'assets/icons/inactive-user-icon.png',
+    }; 
+
+    console.log('getUserStatusImage');
+
+    return status[userIndex];
+  }
 }
