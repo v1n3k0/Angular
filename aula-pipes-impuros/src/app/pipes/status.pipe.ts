@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'status',
-  pure: false,
+  pure: true,
 })
 export class StatusPipe implements PipeTransform {
   transform(userStatus: number): string {

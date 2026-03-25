@@ -35,4 +35,15 @@ export class AppComponent {
       status: 1,
     });
   }
+
+  getUserStatus(userIndex: number): string {
+    const status: { [key:string]: string } = {
+      1: 'Ativo',
+      2: 'Inativo',
+    };
+
+    console.log('getUserStatus');
+
+    return status[this.users[userIndex].status];
+  }
 }
