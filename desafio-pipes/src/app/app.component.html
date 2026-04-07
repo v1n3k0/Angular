@@ -19,7 +19,7 @@
                   <td class="operations__table-cell">{{ operation.customerName }}</td>
                   <td class="operations__table-cell">
                       <p class="operations__status">
-                          {{ operation.customerStatus }}
+                          {{ operation.customerStatus | status }}
                           <img src="{{ operation.customerStatus }}" class="operations__icon" />
                       </p>
                   </td>
