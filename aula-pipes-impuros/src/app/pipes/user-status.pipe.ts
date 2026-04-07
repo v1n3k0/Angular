@@ -10,8 +10,6 @@ export class UserStatusPipe implements PipeTransform {
       2: 'assets/icons/inactive-user-icon.png',
     }; 
 
-    console.log('user status pipe');
-
     return status[userStatus];
   }
 }
