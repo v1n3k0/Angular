@@ -1,6 +1,6 @@
 <div class="operations">
   <div class="operations__filter">
-      <input class="operations__filter-input" type="text" placeholder="Filtrar por Nome">
+      <input class="operations__filter-input" type="text" placeholder="Filtrar por Nome" (keyup)="filterName($event)"/>
   </div>
   <div class="operations__table">
       <table>
