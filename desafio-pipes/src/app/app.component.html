@@ -23,10 +23,10 @@
                           <img src="{{ operation.customerStatus | statusImg }}" class="operations__icon" width="20" height="20"/>
                       </p>
                   </td>
-                  <td class="operations__table-cell">{{ operation.operationDate }}</td>
-                  <td class="operations__table-cell">{{ operation.operationDate }}</td>
-                  <td class="operations__table-cell">R$ {{ operation.operationValue }}</td>
-                  <td class="operations__table-cell">{{ operation.operationRisck }}</td>
+                  <td class="operations__table-cell">{{ operation.operationDate | date:'dd/MM/yyyy' }}</td>
+                  <td class="operations__table-cell">{{ operation.operationDate | date:'HH:mm a' }}</td>
+                  <td class="operations__table-cell">R$ {{ operation.operationValue | number:'0.2':'pt-BR'}}</td>
+                  <td class="operations__table-cell">{{ operation.operationRisck | percent:'0.0-2':'pt-BR' }}</td>
               </tr>              
           </tbody>
       </table>
