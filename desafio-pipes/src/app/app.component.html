@@ -20,7 +20,7 @@
                   <td class="operations__table-cell">
                       <p class="operations__status">
                           {{ operation.customerStatus | status }}
-                          <img src="{{ operation.customerStatus }}" class="operations__icon" />
+                          <img src="{{ operation.customerStatus | statusImg }}" class="operations__icon" width="20" height="20"/>
                       </p>
                   </td>
                   <td class="operations__table-cell">{{ operation.operationDate }}</td>
