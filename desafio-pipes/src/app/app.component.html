@@ -1,6 +1,8 @@
 <div class="operations">
   <div class="operations__filter">
-      <input class="operations__filter-input" type="text" placeholder="Filtrar por Nome" (keyup)="filterName($event)"/>
+      <input class="operations__filter-input" type="text" placeholder="Filtrar por Nome" 
+      [(ngModel)]="searchValue"
+      />
   </div>
   <div class="operations__table">
       <table>
@@ -15,7 +17,7 @@
               </tr>
           </thead>
           <tbody>
-              <tr *ngFor="let operation of operations">
+              <tr *ngFor="let operation of operations | filter: 'customerName': 'searchValue'">
                   <td class="operations__table-cell">{{ operation.customerName }}</td>
                   <td class="operations__table-cell">
                       <p class="operations__status">
@@ -25,8 +27,8 @@
                   </td>
                   <td class="operations__table-cell">{{ operation.operationDate | date:'dd/MM/yyyy' }}</td>
                   <td class="operations__table-cell">{{ operation.operationDate | date:'HH:mm a' }}</td>
-                  <td class="operations__table-cell">R$ {{ operation.operationValue | number:'0.2':'pt-BR'}}</td>
-                  <td class="operations__table-cell">{{ operation.operationRisck | percent:'0.0-2':'pt-BR' }}</td>
+                  <td class="operations__table-cell">{{ operation.operationValue | currency}}</td>
+                  <td class="operations__table-cell">{{ operation.operationRisck | percent:'1.0-2':'pt-BR' }}</td>
               </tr>              
           </tbody>
       </table>

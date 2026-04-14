@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { operationsListResponseMock } from './mocks/operations-list-reponse.mock';
 import { OperationsService } from './services/operation.service';
 import { OperationsListResponse } from './types/operations-list-response.type';
 import { take } from 'rxjs';
@@ -11,6 +10,7 @@ import { take } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   operations: OperationsListResponse | undefined;
+  searchValue: string = '';
 
   constructor(
     private readonly _operationsService: OperationsService
